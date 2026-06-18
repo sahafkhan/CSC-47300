@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SK Restaurant | Luxury Fine Dining</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#home" class="logo">SK<span>Restaurant</span></a>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-slide active" style="background-image: url('images/hero.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('images/interior2.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('images/interior3.jpg');"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Luxury Fine Dining</p>
+        <h1>SK Restaurant</h1>
+        <p>Famous-style signature dishes, premium steak, fresh lobster, and elegant desserts crafted for an unforgettable night.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn primary">View Menu</a>
+          <a href="#contact" class="btn secondary">Reserve a Table</a>
+        </div>
+      </div>
+      <div class="hero-dots" aria-label="Hero gallery controls">
+        <button class="hero-dot active" type="button" aria-label="Show hero image 1"></button>
+        <button class="hero-dot" type="button" aria-label="Show hero image 2"></button>
+        <button class="hero-dot" type="button" aria-label="Show hero image 3"></button>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="section-heading">
+        <p class="eyebrow">Our Menu</p>
+        <h2>Signature Dishes</h2>
+        <p>Click any item to add it to your cart.</p>
+      </div>
+
+      <div class="menu-layout">
+        <div class="menu-grid" id="menuGrid">
+          <article class="menu-card" data-name="Beef Wellington" data-price="42">
+            <img src="images/beef-wellington.jpg" alt="Beef Wellington">
+            <div>
+              <h3>Beef Wellington</h3>
+              <p>Tender beef wrapped in mushroom duxelles and golden pastry.</p>
+              <div class="card-bottom">
+                <span>$42</span>
+                <button class="add-btn">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card" data-name="Wagyu Ribeye" data-price="68">
+            <img src="images/steak.jpg" alt="Wagyu Ribeye steak">
+            <div>
+              <h3>Wagyu Ribeye</h3>
+              <p>Rich, marbled steak seared perfectly and finished with herb butter.</p>
+              <div class="card-bottom">
+                <span>$68</span>
+                <button class="add-btn">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card" data-name="Lobster Thermidor" data-price="48">
+            <img src="images/lobster.jpg" alt="Lobster Thermidor">
+            <div>
+              <h3>Lobster Thermidor</h3>
+              <p>Fresh lobster baked with a creamy, elegant sauce.</p>
+              <div class="card-bottom">
+                <span>$48</span>
+                <button class="add-btn">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card" data-name="Seared Scallops" data-price="34">
+            <img src="images/scallops.jpg" alt="Seared scallops">
+            <div>
+              <h3>Seared Scallops</h3>
+              <p>Golden scallops served with citrus butter and microgreens.</p>
+              <div class="card-bottom">
+                <span>$34</span>
+                <button class="add-btn">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card" data-name="Herb-Crusted Rack of Lamb" data-price="39">
+            <img src="images/lamb.jpg" alt="Rack of lamb">
+            <div>
+              <h3>Herb-Crusted Rack of Lamb</h3>
+              <p>Juicy lamb with rosemary crust and red wine reduction.</p>
+              <div class="card-bottom">
+                <span>$39</span>
+                <button class="add-btn">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card" data-name="Truffle Risotto" data-price="28">
+            <img src="images/risotto.jpg" alt="Truffle risotto">
+            <div>
+              <h3>Truffle Risotto</h3>
+              <p>Creamy arborio rice with parmesan and black truffle aroma.</p>
+              <div class="card-bottom">
+                <span>$28</span>
+                <button class="add-btn">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card" data-name="Pan-Seared Salmon" data-price="32">
+            <img src="images/salmon.jpg" alt="Pan-seared salmon">
+            <div>
+              <h3>Pan-Seared Salmon</h3>
+              <p>Crispy salmon with lemon beurre blanc and seasonal vegetables.</p>
+              <div class="card-bottom">
+                <span>$32</span>
+                <button class="add-btn">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card" data-name="Crème Brûlée" data-price="13">
+            <img src="images/dessert.jpg" alt="Crème brûlée dessert">
+            <div>
+              <h3>Crème Brûlée</h3>
+              <p>Classic vanilla custard with a crisp caramelized sugar top.</p>
+              <div class="card-bottom">
+                <span>$13</span>
+                <button class="add-btn">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <aside class="cart" id="cart">
+          <h2>Your Cart</h2>
+          <div id="cartItems" class="cart-items">
+            <p class="empty-cart">Your cart is empty.</p>
+          </div>
+          <div class="cart-total">
+            <span>Total:</span>
+            <strong id="cartTotal">$0</strong>
+          </div>
+          <button class="clear-btn" id="clearCart">Clear Cart</button>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow">Gallery</p>
+        <h2>A Taste of SK</h2>
+      </div>
+
+      <div class="slider">
+        <button class="slider-btn prev" id="prevBtn">&#10094;</button>
+        <div class="slide active">
+          <img src="images/beef-wellington.jpg" alt="Beef Wellington">
+        </div>
+        <div class="slide">
+          <img src="images/steak.jpg" alt="Fine dining steak">
+        </div>
+        <div class="slide">
+          <img src="images/lobster.jpg" alt="Lobster dish">
+        </div>
+        <div class="slide">
+          <img src="images/scallops.jpg" alt="Seared scallops">
+        </div>
+        <div class="slide">
+          <img src="images/interior.jpg" alt="Luxury restaurant interior">
+        </div>
+        <div class="slide">
+          <img src="images/dessert.jpg" alt="Fine dining dessert">
+        </div>
+        <button class="slider-btn next" id="nextBtn">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-image">
+        <img src="images/interior.jpg" alt="SK Restaurant interior">
+      </div>
+      <div class="about-text">
+        <p class="eyebrow">Our Story</p>
+        <h2>Fine Dining with a Modern Touch</h2>
+        <p>
+          SK Restaurant was created for guests who love elegant food, warm service, and unforgettable flavors.
+          Our kitchen combines classic fine-dining dishes with a modern presentation, from perfectly cooked steak
+          to fresh lobster, scallops, lamb, risotto, and signature desserts.
+        </p>
+        <p>
+          Every plate is prepared with care, using quality ingredients and bold flavors. Whether guests come for a
+          celebration, a date night, or a special dinner, SK Restaurant delivers a luxury dining experience.
+        </p>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Reserve or Ask a Question</h2>
+      </div>
+
+      <div class="contact-layout">
+        <div class="map">
+          <iframe
+            title="SK Restaurant map"
+            src="https://www.google.com/maps?q=Trump%20Tower%2C%20725%205th%20Ave%2C%20New%20York%2C%20NY%2010022&output=embed"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Your email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Write your message" required></textarea>
+
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <h3>SK Restaurant</h3>
+      <p>Luxury fine dining with signature dishes and unforgettable flavor.</p>
+    </div>
+
+    <div>
+      <h4>Business Hours</h4>
+      <p>Mon - Thu: 5 PM - 10 PM</p>
+      <p>Fri - Sat: 5 PM - 12 AM</p>
+      <p>Sun: 4 PM - 9 PM</p>
+    </div>
+
+    <div>
+      <h4>Follow Us</h4>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">TikTok</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

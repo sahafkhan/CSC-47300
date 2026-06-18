@@ -1,0 +1,12 @@
+Download free images from Pexels, Unsplash, or Pixabay and rename them:
+
+hero.jpg
+beef-wellington.jpg
+steak.jpg
+lobster.jpg
+scallops.jpg
+lamb.jpg
+risotto.jpg
+salmon.jpg
+interior.jpg
+dessert.jpg
